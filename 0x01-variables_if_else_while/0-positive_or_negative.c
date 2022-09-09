@@ -5,6 +5,7 @@
 /* main : check if the number is positive or nagative */
 /* Description : This program will assign a random number to the variable n each time it is executed */
 /*return 0*/
+
 int main(void)
 {
 	int n;
