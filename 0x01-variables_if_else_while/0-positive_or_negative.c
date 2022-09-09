@@ -3,11 +3,11 @@
 #include <time.h>
 
 /**
-* main : check if the number is positive or nagative
+* main: check if the number is positive or nagative
 * 
-* Description : This program will assign a random number to the variable n each time it is executed
+* Description: This program will assign a random number to the variable n each time it is executed
 *
-* return 0
+* Return: 0
 */
 
 int main(void)
@@ -15,15 +15,11 @@ int main(void)
 	int n;
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	
 	if (n > 0)
     		printf("%d is positive\n", n);
-	
  	else if (n == 0)
     		printf("%d is zero\n", n);
-	
  	else 
     		printf("%d is nagative\n", n);
-	
 	return (0);
   }
