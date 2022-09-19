@@ -1,23 +1,22 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
-*print_most_numbers - prints numbers except 2 and 4
-*
-*Return: 0
-*/
-
-void print_most_numbers(void)
+ * print_rev - prints a string, in reverse, followed by a new line.
+ * @s: input string.
+ * Return: 0
+ */
+void print_rev(char *s)
 {
-	int n;
+	int count = 0;
 
-	for (n = 48; n < 58; n++)
+	while (count >= 0)
 	{
-		if ((n == 50) || (n == 52))
-		{
-			continue;
-		}
-		putchar(n);
+		if (s[count] == '\0')
+			break;
+		count++;
 	}
-	putchar(10);
+
+	for (count--; count >= 0; count--)
+		_putchar(s[count]);
+	_putchar('\n');
 }
