@@ -6,18 +6,18 @@
  * buffer pointed to by dest.
  * @dest: destination.
  * @src: source.
- * Return: the pointer to x.
+ * Return: the pointer to dest.
  */
-char *_strcpy(char *x, char *src)
+char *_strcpy(char *dest, char *src)
 {
 	int count = 0;
 
 	while (count >= 0)
 	{
-		*(x + count) = *(src + count);
+		*(dest + count) = *(src + count);
 		if (*(src + count) == '\0')
 			break;
 		count++;
 	}
-	return (x);
+	return (dest);
 }
