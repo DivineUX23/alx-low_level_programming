@@ -49,4 +49,5 @@ dog_t *new_dog(char *name, float age, char *owner)
 		p_dog->owner[i] = owner[i];
 	p_dog->owner[i] = '\0';
 
-	retu
+	return (p_dog);
+}
